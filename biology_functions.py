@@ -134,3 +134,19 @@ def triplets_abc (triplets, new_number):
       i += 1
   return triplets_abs  
   
+  
+  def stop_codon (i, RMK, first_counter):
+        while (i < n - 1):
+          if RNK[i - 1] + RNK[i] + RNK[i + 1] == "UAA":
+            stop_codon = "UAA"
+            first_counter = i - 1
+          if RNK[i - 1] + RNK[i] + RNK[i + 1] == "UAG":
+            stop_codon = "UAG"
+            first_counter = i - 1
+          if RNK[i - 1] + RNK[i] + RNK[i + 1] == "UGA":
+            stop_codon = "UGA"
+            first_counter = i - 1
+          i += 1
+        return stop_codon
+      
+      
