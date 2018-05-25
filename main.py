@@ -30,17 +30,7 @@ def DNKCommand(bot, update, args):
     i = 1;
     stop_codon = ""
     first_counter = n
-    while (i < n - 1):
-        if RNK[i - 1] + RNK[i] + RNK[i + 1] == "UAA":
-            stop_codon = "UAA"
-            first_counter = i - 1
-        if RNK[i - 1] + RNK[i] + RNK[i + 1] == "UAG":
-            stop_codon = "UAG"
-            first_counter = i - 1
-        if RNK[i - 1] + RNK[i] + RNK[i + 1] == "UGA":
-            stop_codon = "UGA"
-            first_counter = i - 1
-        i += 1
+    
     if (stop_codon != ''):
         bot.send_message(chat_id=update.message.chat_id, text='''Стоп-кодон:''')
         bot.send_message(chat_id=update.message.chat_id, text=stop_codon)
@@ -58,6 +48,7 @@ def DNKCommand(bot, update, args):
 
     i = 0
     string_triplets = ''
+    
     while (i < new_number):
       string_triplets += str(triplets[i]) + ' '
       i += 1
