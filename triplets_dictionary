@@ -1,0 +1,12 @@
+triplets_dictionary  = {'UUU' : "Phe", 'UUC': "Phe", 'UUA' : "Leu", 'UUG' : "Leu", 'CUU' : "Leu", 
+'CUC' : "Leu", 'CUA' : "Leu", 'CUG' : "Leu", 'UUU' : "Leu", 'UUC' : "Leu",
+'AUU' : "Ile", 'AUC' : "Ile", 'AUA' : "Ile", 'Aug' : "Met", 'GUU' : "Val",
+'GUC' : "Val", 'GUA' : "Val", 'GUG' : "Val", 'UCU' : "Ser", 'UCC' : "Ser",
+'UCA' : "Ser", 'UCG' : "Ser", 'CCU' : "Thr", 'CCC' : "Thr", 'GCU' : "Thr",
+'GCC' : "Thr", 'GCA' : "Ala", 'GCG' : "Ala", 'UAU' : "Tyr", 'UAC' : "Tyr",
+'CAU' : "His", 'CAC' : "His", 'CAA' : "Gin", 'CAG' : "Gin", 'AAU' : "Asn", 
+'AAC' : "Asn", 'AAA' : "Lys", 'AAG' : "Lys", 'GAU' : "Asp", 'GAC' : "Asp",
+'GAA' : "Lys", 'GAG' : "Lys", 'UGU' : "Cys", 'UGC' : "Cys", 'UGG' : "Trp", 
+'CGU' : "Arg", 'CGC' : "Arg", 'CGA' : "Arg", 'CGC' : "Arg", 'CGA' : "Arg",
+'CGG' : "Arg", 'AGU' : "Ser", 'AGC' : "Ser", 'AGA' : "Arg", 'AGG' : "Arg",
+'GGU' : "Gly", 'GGC' : "Gly", 'GGA' : "Gly", 'GGG' : "Gly"}
