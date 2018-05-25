@@ -39,21 +39,17 @@ def DNKCommand(bot, update, args):
     sub_string = ""
     k = n % 3
     i = k
-    while (i < n):
-        sub_string += RNK[i]
-        i += 1
-    RNK = sub_string
+
+    RNK = string_RNK (n, RNK, sub_string)
     n -= k
     first_counter -= k
     triplets = triplets(RNK, first_counter)
     new_number = len(triplets)
 
     i = 0
-    string_triplets = ''
     
-    while (i < new_number):
-      string_triplets += str(triplets[i]) + ' '
-      i += 1
+    string_triplets = string_triplets (new_number, triplets, i)
+   
 
     bot.send_message(chat_id=update.message.chat_id, text='''Триплеты:''')
     bot.send_message(chat_id=update.message.chat_id, text=string_triplets)
@@ -62,10 +58,7 @@ def DNKCommand(bot, update, args):
 
     triplets_abs = triplets_abc(triplets, new_number)
 
-    string_triplets_abc = ''
-    while (i < new_number):
-        string_triplets_abc += triplets_abs[i] + ' '
-        i += 1
+    string_triplets_abc = string_triplets (new_number, triplets_abc, i)
 
     bot.send_message(chat_id=update.message.chat_id, text=string_triplets_abc)
     bot.send_message(chat_id=update.message.chat_id, text='''Длина белка (нм) :''')
