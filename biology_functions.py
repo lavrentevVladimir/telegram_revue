@@ -6,19 +6,14 @@ def RNK (DNK, n):
   while (i < n):
     list_nucleotide.append(DNK[n - i - 1])
     list_RNK.append(DNK[n - i - 1])
-    k = 0
-    if ((list_nucleotide[i] == "A") and (k == 0)):
+    if (list_nucleotide[i] == "A"):
       list_RNK[i] = "U"
-      k = 1
-    if ((list_nucleotide[i] == "T") and (k == 0)):
+    elif (list_nucleotide[i] == "T"):
       list_RNK[i] = "A"
-      k = 1
-    if ((list_nucleotide[i] == "G") and (k == 0)):
+    elif (list_nucleotide[i] == "G"):
       list_RNK[i] = "C"
-      k = 1
-    if ((list_nucleotide[i] == "C") and (k == 0)):
+    elif (list_nucleotide[i] == "C"):
       list_RNK[i] = "G"
-      k = 1
     i += 1
   i = 0
   RNK = ""
@@ -33,19 +28,14 @@ def reverse_DNK (DNK, n):
   i = 0
   while (i < n):
     list_nucleotide.append(DNK[n - i - 1])
-    k = 0
-    if ((list_nucleotide[i] == "A") and (k == 0)):
+    if (list_nucleotide[i] == "A"):
       list_nucleotide[i] = "T"        
-      k = 1
-    if ((list_nucleotide[i] == "T") and (k == 0)):
+    elif (list_nucleotide[i] == "T"):
       list_nucleotide[i] = "A"
-      k = 1
-    if ((list_nucleotide[i] == "G") and (k == 0)):
+    elif (list_nucleotide[i] == "G"):
       list_nucleotide[i] = "C"
-      k = 1
-    if ((list_nucleotide[i] == "C") and (k == 0)):
+    elif (list_nucleotide[i] == "C"):
       list_nucleotide[i] = "G"
-      k = 1
     i += 1
   i = 0
   reverse_DNK = ""
