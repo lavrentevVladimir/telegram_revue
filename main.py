@@ -31,6 +31,8 @@ def DNKCommand(bot, update, args):
     stop_codon = ""
     first_counter = n
     
+    stop_codon = stop_codon (i, RNK, first_counter)
+    
     if (stop_codon != ''):
         bot.send_message(chat_id=update.message.chat_id, text='''Стоп-кодон:''')
         bot.send_message(chat_id=update.message.chat_id, text=stop_codon)
