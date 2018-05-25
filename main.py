@@ -1,5 +1,6 @@
 import config
 import biology_functions
+import triplets_dictionary
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 updater = Updater(token=TOKEN)
